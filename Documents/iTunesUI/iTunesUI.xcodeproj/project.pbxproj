@@ -37,6 +37,7 @@
 		7A223988178E96AB00C2A1EE /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		7A24285E1795342800097EFA /* windowUnusedFilesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windowUnusedFilesController.h; sourceTree = "<group>"; };
 		7A24285F1795342800097EFA /* windowUnusedFilesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = windowUnusedFilesController.m; sourceTree = "<group>"; };
+		7A2428C817A3B9ED00097EFA /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iTunesUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iTunesUI-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* iTunesUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,6 +121,7 @@
 				8D1107310486CEB800E47090 /* iTunesUI-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				7A2428C817A3B9ED00097EFA /* Readme.md */,
 			);
 			name = Resources;
 			sourceTree = "<group>";

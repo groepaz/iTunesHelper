@@ -10,8 +10,8 @@
 	256AC3D90F4B6AC300CF3369 /* iTunesUIAppDelegate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1004, 1703}}";
-			sepNavSelRange = "{569, 0}";
-			sepNavVisRange = "{0, 795}";
+			sepNavSelRange = "{1270, 0}";
+			sepNavVisRange = "{447, 1116}";
 		};
 	};
 	256AC3F00F4B6AF500CF3369 /* iTunesUI_Prefix.pch */ = {
@@ -26,7 +26,6 @@
 		activeExecutable = 7A9FAD6D178D26DB00DDC3D8 /* iTunesUI */;
 		activeTarget = 8D1107260486CEB800E47090 /* iTunesUI */;
 		addToTargets = (
-			8D1107260486CEB800E47090 /* iTunesUI */,
 		);
 		breakpoints = (
 		);
@@ -524,9 +523,9 @@
 	};
 	7A223988178E96AB00C2A1EE /* Utils.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 1157}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 1235}}";
 			sepNavSelRange = "{1084, 0}";
-			sepNavVisRange = "{901, 1412}";
+			sepNavVisRange = "{0, 905}";
 		};
 	};
 	7A2239BD178E9F0A00C2A1EE /* PBXTextBookmark */ = {
