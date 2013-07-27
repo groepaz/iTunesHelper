@@ -1,7 +1,7 @@
 TiTunesUI
 v7
 r0
-t395270014.811089
+t396526764.462004
 cCheck dependencies
 cProcessInfoPlistFile /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Info.plist iTunesUI-Info.plist
 cCopyStringsFile /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
@@ -12,6 +12,7 @@ cCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunes
 cCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/File.o /Users/michaelhess/Documents/iTunesUI/File.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/UnusedFiles.o /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/Utils.o /Users/michaelhess/Documents/iTunesUI/Utils.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/windowUnusedFilesController.o /Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/MacOS/iTunesUI normal x86_64
 cTouch /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app
 
@@ -25,6 +26,11 @@ c0000000040C4AA6800000000000001E5
 t1086630504
 s485
 
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B90FBB700000000000013E6
+t1267792823
+s5094
+
 N/System/Library/Frameworks/Cocoa.framework/Cocoa
 c000000004A1F2D63000000000000A5E0
 t1243557219
@@ -36,20 +42,20 @@ t1373433690
 s45
 
 N/Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib
-c0000000051DF1FFB0000000000030141
-t1373577211
-s196929
+c0000000051E64C1C0000000000035A9D
+t1374047260
+s219805
 
 N/Users/michaelhess/Documents/iTunesUI/File.h
-c0000000051DE597A0000000000000104
-t1373526394
-s260
+c0000000051E3A0FD0000000000000154
+t1373872381
+s340
 i<Cocoa/Cocoa.h>
 
 N/Users/michaelhess/Documents/iTunesUI/File.m
-c0000000051DE599F00000000000000CB
-t1373526431
-s203
+c0000000051E242E300000000000000E1
+t1373782755
+s225
 i"File.h"
 
 N/Users/michaelhess/Documents/iTunesUI/UI.xib
@@ -58,96 +64,121 @@ t1373525264
 s192931
 
 N/Users/michaelhess/Documents/iTunesUI/UnusedFiles.h
-c0000000051DE65960000000000000118
-t1373529494
-s280
+c0000000051E262F6000000000000013A
+t1373790966
+s314
 i<Cocoa/Cocoa.h>
 
 N/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m
-c0000000051DF1FFE0000000000000F0F
-t1373577214
-s3855
+c0000000051E3B48D0000000000000DB2
+t1373877389
+s3506
 i"UnusedFiles.h"
 i"Utils.h"
 
 N/Users/michaelhess/Documents/iTunesUI/Utils.h
-c0000000051DE5F6E0000000000000136
-t1373527918
-s310
+c0000000051E4F3E200000000000001C6
+t1373959138
+s454
 i<Cocoa/Cocoa.h>
 
 N/Users/michaelhess/Documents/iTunesUI/Utils.m
-c0000000051DE5F8D000000000000062B
-t1373527949
-s1579
+c0000000051E4F3E20000000000000A09
+t1373959138
+s2569
 i"Utils.h"
 
 N/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app
-t1373577214
+t1374833964
 s102
 
 N/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Info.plist
-t1373433976
+t1373830445
 s889
 
 N/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/MacOS/iTunesUI
-t1373577214
-s22304
+t1374833964
+s34936
 
 N/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/PkgInfo
-t1373433976
+t1373830445
 s8
 
 N/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1373433977
+t1373830446
 s92
 
 N/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj/MainMenu.nib
-t1373577214
-s38400
+t1374833963
+s43020
 
 N/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/UI.nib
 t1373526084
 s38342
 
 N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/File.o
-t1373526431
-s7800
+t1373872381
+s9128
 
 N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/UnusedFiles.o
-t1373577214
-s16008
+t1373959138
+s15840
 
 N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/Utils.o
-t1373527950
-s13536
+t1373959138
+s16760
 
 N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunesUI.LinkFileList
-c0000000051DE5F8D0000000000000238
-t1373527949
-s568
+c0000000051E4FCAE00000000000002BC
+t1373961390
+s700
 
 N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunesUIAppDelegate.o
-t1373533511
-s27492
+t1374833964
+s46308
 
 N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/main.o
-t1373433983
+t1373873467
 s4984
 
+N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/windowUnusedFilesController.o
+t1373961956
+s14852
+
+N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/File.plist
+t1373870981
+s276
+
+N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/UnusedFiles.plist
+t1373870981
+s22604
+
+N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/Utils.plist
+t1373871867
+s19081
+
+N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/iTunesUIAppDelegate.plist
+t1373872239
+s28676
+
+N/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/main.plist
+t1373870981
+s276
+
 N/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.h
-c0000000051DE54440000000000000178
-t1373525060
-s376
+c0000000051E5012A00000000000004CA
+t1373962538
+s1226
 i<Cocoa/Cocoa.h>
 
 N/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m
-c0000000051DE754700000000000002B9
-t1373533511
-s697
+c0000000051F24D2B0000000000000E48
+t1374833963
+s3656
 i"iTunesUIAppDelegate.h"
 i"File.h"
 i"UnusedFiles.h"
+i"Utils.h"
 
 N/Users/michaelhess/Documents/iTunesUI/iTunesUI_Prefix.pch
 c0000000051DCEF5B0000000000000093
@@ -156,13 +187,29 @@ s147
 i<Cocoa/Cocoa.h>
 
 N/Users/michaelhess/Documents/iTunesUI/main.m
-c0000000051DCEF5B00000000000000FF
-t1373433691
-s255
+c0000000051E3A53B0000000000000100
+t1373873467
+s256
 i<Cocoa/Cocoa.h>
 
+N/Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.h
+c0000000051E4FEDC000000000000016A
+t1373961948
+s362
+i<Cocoa/Cocoa.h>
+
+N/Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m
+c0000000051E4FEE3000000000000014A
+t1373961955
+s330
+i"windowUnusedFilesController.h"
+
+N/var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch.pth
+t1373870981
+s8769572
+
 N/var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch.gch
-t1373433982
+t1373830453
 s54265616
 
 NiTunesUI-Info.plist
@@ -170,13 +217,80 @@ c0000000051DCEF5A00000000000003EA
 t1373433690
 s1002
 
+CAnalyze /Users/michaelhess/Documents/iTunesUI/File.m
+s395563781.563012
+e395563781.686139
+r1
+xAnalyze
+x/Users/michaelhess/Documents/iTunesUI/File.m
+lSLF07#2@52"Analyze /Users/michaelhess/Documents/iTunesUI/File.m395563781#395563781#0(0"0(0#0#44"/Users/michaelhess/Documents/iTunesUI/File.m8616800864#1513"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch --analyze /Users/michaelhess/Documents/iTunesUI/File.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/File.plist0#
+
+CAnalyze /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m
+s395563781.563736
+e395563781.805408
+r1
+xAnalyze
+x/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m
+o/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m:73:32: warning: Potential leak of an object allocated on line 73
+o         NSMutableArray* unusedFiles = [[NSMutableArray alloc] initWithCapacity:0];
+o                                       ^
+o/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m:46:33: warning: Potential leak of an object allocated on line 46
+o         NSMutableArray* filesFromXml = [[NSMutableArray alloc] initWithCapacity:0];
+o                                        ^
+o/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m:39:17: warning: Potential leak of an object allocated on line 39
+o         Utils *utils = [[Utils alloc]init];
+o                        ^
+o3 warnings generated.
+lSLF07#2@59"Analyze /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395563781#395563781#0(696"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m:73:32: warning: Potential leak of an object allocated on line 73         NSMutableArray* unusedFiles = [[NSMutableArray alloc] initWithCapacity:0];                                       ^/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m:46:33: warning: Potential leak of an object allocated on line 46         NSMutableArray* filesFromXml = [[NSMutableArray alloc] initWithCapacity:0];                                        ^/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m:39:17: warning: Potential leak of an object allocated on line 39         Utils *utils = [[Utils alloc]init];                        ^3 warnings generated.3(0@48"Potential leak of an object allocated on line 39395563781#18446744073709551615#0#5(17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#23#2#23#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#39#2#39#2#17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#39#2#39#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#39#17#39#35#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#39#17#0#0#0"1(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#39#17#39#35#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#39#17#39#35#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#42#2#42#9#21@113"Object allocated on line 39 is no longer referenced after this point and has a retain count of +1 (object leaked)395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#42#2#0#0#0"1(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#42#2#42#9#113"Object allocated on line 39 is no longer referenced after this point and has a retain count of +1 (object leaked)6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#42#2#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@48"Potential leak of an object allocated on line 46395563781#18446744073709551615#0#8(17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#23#2#23#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#46#2#46#2#17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#46#2#46#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#46#33#46#75#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#46#33#0#0#0"1(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#46#33#46#75#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#46#33#46#75#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#50#2#50#2#17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#50#2#50#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#73#2#73#2#17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#73#2#73#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#75#2#75#2#17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#75#2#75#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#127#7#21@113"Object allocated on line 46 is no longer referenced after this point and has a retain count of +1 (object leaked)395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#0#0#0"1(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#127#7#113"Object allocated on line 46 is no longer referenced after this point and has a retain count of +1 (object leaked)6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@48"Potential leak of an object allocated on line 73395563781#18446744073709551615#0#8(17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#23#2#23#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#50#2#50#2#17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#50#2#50#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#73#2#73#2#17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#73#2#73#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#73#32#73#74#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#73#32#0#0#0"1(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#73#32#73#74#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#73#32#73#74#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#75#2#75#2#17@0"395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#0"0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#0#0#0#0#1(3@6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#75#2#75#2#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#127#7#21@92"Object returned to caller as an owning reference (single retain count transferred to caller)395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#0#0#0"2(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#127#19#6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#9#127#19#92"Object returned to caller as an owning reference (single retain count transferred to caller)21@261"Object allocated on line 73 is returned from a method whose name ('listOfUnusedFiles::') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)395563781#18446744073709551615#0#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#0#0#0"1(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#127#7#261"Object allocated on line 73 is returned from a method whose name ('listOfUnusedFiles::') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395487390#127#2#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0#0#51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m8616740544#1527"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch --analyze /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/UnusedFiles.plist0#
+
+CAnalyze /Users/michaelhess/Documents/iTunesUI/Utils.m
+s395564667.186468
+e395564667.297933
+r1
+xAnalyze
+x/Users/michaelhess/Documents/iTunesUI/Utils.m
+o/Users/michaelhess/Documents/iTunesUI/Utils.m:31:18: warning: Potential leak of an object allocated on line 31
+o         xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:furl options:NSXMLDocumentTidyXML error:&err];
+o                  ^
+o/Users/michaelhess/Documents/iTunesUI/Utils.m:26:29: warning: Potential leak of an object allocated on line 26
+o     NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:furl options:(NSXMLNodePreserveWhitespace|NSXMLNodePreserveCDATA) error:&err];
+o                             ^
+o2 warnings generated.
+lSLF07#2@53"Analyze /Users/michaelhess/Documents/iTunesUI/Utils.m395564667#395564667#0(558"/Users/michaelhess/Documents/iTunesUI/Utils.m:31:18: warning: Potential leak of an object allocated on line 31         xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:furl options:NSXMLDocumentTidyXML error:&err];                  ^/Users/michaelhess/Documents/iTunesUI/Utils.m:26:29: warning: Potential leak of an object allocated on line 26     NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:furl options:(NSXMLNodePreserveWhitespace|NSXMLNodePreserveCDATA) error:&err];                             ^2 warnings generated.2(0@48"Potential leak of an object allocated on line 26395564667#18446744073709551615#0#8(17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#16#5#16#5#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#19#5#19#5#17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#19#5#19#5#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#26#5#26#5#17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#26#5#26#5#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#26#29#26#150#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#26#29#0#0#0"1(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#26#29#26#150#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#26#29#26#150#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#27#2#27#2#17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#27#2#27#2#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#34#7#21@92"Object returned to caller as an owning reference (single retain count transferred to caller)395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#0#0#0"2(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#34#14#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#9#34#14#92"Object returned to caller as an owning reference (single retain count transferred to caller)21@268"Object allocated on line 26 is returned from a method whose name ('createXMLDocumentFromFile:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#0#0#0"1(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#34#7#268"Object allocated on line 26 is returned from a method whose name ('createXMLDocumentFromFile:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0@48"Potential leak of an object allocated on line 31395564667#18446744073709551615#0#9(17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#16#5#16#5#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#19#5#19#5#17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#19#5#19#5#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#26#5#26#5#17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#26#5#26#5#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#27#2#27#2#17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#27#2#27#2#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#31#9#31#9#17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#31#9#31#9#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#31#18#31#107#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#31#18#0#0#0"1(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#31#18#31#107#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#0"0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#0#0#0#0#1(3@6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#31#18#31#107#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#34#7#21@92"Object returned to caller as an owning reference (single retain count transferred to caller)395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#0#0#0"2(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#34#14#6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#9#34#14#92"Object returned to caller as an owning reference (single retain count transferred to caller)21@268"Object allocated on line 31 is returned from a method whose name ('createXMLDocumentFromFile:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)395564667#18446744073709551615#0#0(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#0#0#0"1(6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#34#7#268"Object allocated on line 31 is returned from a method whose name ('createXMLDocumentFromFile:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)6@45"/Users/michaelhess/Documents/iTunesUI/Utils.m395564666#34#2#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0#0#45"/Users/michaelhess/Documents/iTunesUI/Utils.m8623371520#1515"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch --analyze /Users/michaelhess/Documents/iTunesUI/Utils.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/Utils.plist0#
+
+CAnalyze /Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m
+s395565039.457218
+e395565039.551435
+r1
+xAnalyze
+x/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:46:18: warning: Potential leak of an object allocated on line 46
+o                 Utils *utils = [[Utils alloc] init];
+o                                ^
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:82:25: warning: Potential leak of an object allocated on line 82
+o                 UnusedFiles *worker = [[UnusedFiles alloc] init];
+o                                       ^
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:87:17: warning: Potential leak of an object allocated on line 87
+o                         File *file = [[File alloc] init];
+o                                      ^
+o3 warnings generated.
+lSLF07#2@67"Analyze /Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565039#395565039#0(692"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:46:18: warning: Potential leak of an object allocated on line 46                 Utils *utils = [[Utils alloc] init];                                ^/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:82:25: warning: Potential leak of an object allocated on line 82                 UnusedFiles *worker = [[UnusedFiles alloc] init];                                       ^/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:87:17: warning: Potential leak of an object allocated on line 87                         File *file = [[File alloc] init];                                      ^3 warnings generated.3(0@48"Potential leak of an object allocated on line 46395565039#18446744073709551615#0#7(17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#36#2#36#2#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#43#2#43#2#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#43#2#43#2#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#45#3#45#3#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#45#3#45#3#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#46#3#46#3#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#46#3#46#3#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#46#18#46#37#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#46#18#0#0#0"1(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#46#18#46#37#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#46#18#46#37#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#48#3#48#19#21@113"Object allocated on line 46 is no longer referenced after this point and has a retain count of +1 (object leaked)395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#48#3#0#0#0"1(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#48#3#48#19#113"Object allocated on line 46 is no longer referenced after this point and has a retain count of +1 (object leaked)6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#48#3#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@48"Potential leak of an object allocated on line 87395565039#18446744073709551615#0#11(17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#2#56#2#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#5#56#5#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#5#56#5#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#33#56#33#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#33#56#33#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#63#2#63#2#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#63#2#63#2#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#72#2#72#2#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#72#2#72#2#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#74#3#74#3#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#74#3#74#3#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#3#85#3#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#3#85#3#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#87#4#87#4#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#87#4#87#4#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#87#17#87#35#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#87#17#0#0#0"1(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#87#17#87#35#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#87#17#87#35#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#8#85#15#21@113"Object allocated on line 87 is no longer referenced after this point and has a retain count of +1 (object leaked)395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#8#0#0#0"1(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#8#85#15#113"Object allocated on line 87 is no longer referenced after this point and has a retain count of +1 (object leaked)6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#8#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@48"Potential leak of an object allocated on line 82395565039#18446744073709551615#0#10(17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#2#56#2#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#5#56#5#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#5#56#5#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#33#56#33#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#56#33#56#33#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#63#2#63#2#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#63#2#63#2#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#72#2#72#2#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#72#2#72#2#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#74#3#74#3#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#74#3#74#3#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#82#3#82#3#17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#82#3#82#3#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#82#25#82#50#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#82#25#0#0#0"1(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#82#25#82#50#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#0"0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#0#0#0#0#1(3@6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#82#25#82#50#6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#33#85#43#21@113"Object allocated on line 82 is no longer referenced after this point and has a retain count of +1 (object leaked)395565039#18446744073709551615#0#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#33#0#0#0"1(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#33#85#43#113"Object allocated on line 82 is no longer referenced after this point and has a retain count of +1 (object leaked)6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395565035#85#33#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m8614134720#1543"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch --analyze /Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/iTunesUIAppDelegate.plist0#
+
+CAnalyze /Users/michaelhess/Documents/iTunesUI/main.m
+s395563781.561511
+e395563781.756439
+r1
+xAnalyze
+x/Users/michaelhess/Documents/iTunesUI/main.m
+lSLF07#2@52"Analyze /Users/michaelhess/Documents/iTunesUI/main.m395563781#395563781#0(0"0(0#0#44"/Users/michaelhess/Documents/iTunesUI/main.m8619965440#1513"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch --analyze /Users/michaelhess/Documents/iTunesUI/main.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/StaticAnalyzer/normal/x86_64/main.plist0#
+
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies395270014#395270014#0(0"0(0#1#0"8629290016#0"0#
+lSLF07#2@18"Check dependencies396526763#396526763#0(0"0(0#1#0"8625071360#0"0#
 
 CCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/File.o /Users/michaelhess/Documents/iTunesUI/File.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s395219231.268834
-e395219231.575976
+s395565181.825923
+e395565181.927965
 r1
 xCompileC
 xbuild/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/File.o
@@ -185,11 +299,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/michaelhess/Documents/iTunesUI/File.m395219231#395219231#0(0"0(0#0#44"/Users/michaelhess/Documents/iTunesUI/File.m8617919488#1459"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/File.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/File.o0#
+lSLF07#2@52"Compile /Users/michaelhess/Documents/iTunesUI/File.m395565181#395565181#0(0"0(0#0#44"/Users/michaelhess/Documents/iTunesUI/File.m8613252160#1459"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/File.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/File.o0#
 
 CCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/UnusedFiles.o /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s395270014.500851
-e395270014.780671
+s395651938.302814
+e395651938.451077
 r1
 xCompileC
 xbuild/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/UnusedFiles.o
@@ -198,13 +312,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m: In function '-[UnusedFiles listOfUnusedFiles:]':
-o/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m:51: warning: unused variable 'fileIniTunes'
-lSLF07#2@59"Compile /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395270014#395270014#0(198"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m: In function '-[UnusedFiles listOfUnusedFiles:]':/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m:51: warning: unused variable 'fileIniTunes'1(22@30"Unused variable 'fileIniTunes'395270014#102#96#0(6@51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395270014#51#0#51#0#19"unused variable '*'0(0#0#51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m8629096640#1473"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/UnusedFiles.o0#
+lSLF07#2@59"Compile /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m395651938#395651938#0(0"0(0#0#51"/Users/michaelhess/Documents/iTunesUI/UnusedFiles.m8623352800#1473"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/UnusedFiles.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/UnusedFiles.o0#
 
 CCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/Utils.o /Users/michaelhess/Documents/iTunesUI/Utils.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s395220749.896340
-e395220750.226604
+s395651938.303677
+e395651938.458763
 r1
 xCompileC
 xbuild/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/Utils.o
@@ -213,11 +325,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@53"Compile /Users/michaelhess/Documents/iTunesUI/Utils.m395220749#395220750#0(0"0(0#0#45"/Users/michaelhess/Documents/iTunesUI/Utils.m8625212160#1461"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/Utils.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/Utils.o0#
+lSLF07#2@53"Compile /Users/michaelhess/Documents/iTunesUI/Utils.m395651938#395651938#0(0"0(0#0#45"/Users/michaelhess/Documents/iTunesUI/Utils.m8623192480#1461"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/Utils.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/Utils.o0#
 
 CCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunesUIAppDelegate.o /Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s395226311.756016
-e395226311.879456
+s396526763.704743
+e396526764.318974
 r1
 xCompileC
 xbuild/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunesUIAppDelegate.o
@@ -226,11 +338,20 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m395226311#395226311#0(0"0(0#0#59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m8626810976#1489"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunesUIAppDelegate.o0#
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m: In function '-[iTunesUIAppDelegate openXmlFile:]':
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:103: warning: 'fileAttributesAtPath:traverseLink:' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:162)
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m: At top level:
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'xmlFilePath' requires method '-xmlFilePath' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'xmlFilePath' requires the method 'setXmlFilePath:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'musicFilePath' requires method '-musicFilePath' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'musicFilePath' requires the method 'setMusicFilePath:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'windowUnusedFiles' requires method '-windowUnusedFiles' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'windowUnusedFiles' requires the method 'setWindowUnusedFiles:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@67"Compile /Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#396526764#0(1715"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m: In function '-[iTunesUIAppDelegate openXmlFile:]':/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:103: warning: 'fileAttributesAtPath:traverseLink:' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:162)/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m: At top level:/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'xmlFilePath' requires method '-xmlFilePath' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'xmlFilePath' requires the method 'setXmlFilePath:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'musicFilePath' requires method '-musicFilePath' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'musicFilePath' requires the method 'setMusicFilePath:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'windowUnusedFiles' requires method '-windowUnusedFiles' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:126: warning: property 'windowUnusedFiles' requires the method 'setWindowUnusedFiles:' to be defined - use @synthesize, @dynamic or provide a method implementation8(22@170"'fileAttributesAtPath:traverseLink:' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:162)396526764#112#245#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#103#0#103#0#33"'*' is deprecated (declared at *)0(23@13"At top level:396526764#357#75#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#0#0#0#0#0"0(22@130"Property 'xmlFilePath' requires method '-xmlFilePath' to be defined - use @synthesize, @dynamic or provide a method implementation396526764#432#205#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#126#0#126#0#0"0(22@137"Property 'xmlFilePath' requires the method 'setXmlFilePath:' to be defined - use @synthesize, @dynamic or provide a method implementation396526764#637#212#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#126#0#126#0#0"0(22@134"Property 'musicFilePath' requires method '-musicFilePath' to be defined - use @synthesize, @dynamic or provide a method implementation396526764#849#209#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#126#0#126#0#0"0(22@141"Property 'musicFilePath' requires the method 'setMusicFilePath:' to be defined - use @synthesize, @dynamic or provide a method implementation396526764#1058#216#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#126#0#126#0#0"0(22@142"Property 'windowUnusedFiles' requires method '-windowUnusedFiles' to be defined - use @synthesize, @dynamic or provide a method implementation396526764#1274#217#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#126#0#126#0#0"0(22@149"Property 'windowUnusedFiles' requires the method 'setWindowUnusedFiles:' to be defined - use @synthesize, @dynamic or provide a method implementation396526764#1491#224#0(6@59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m396526763#126#0#126#0#0"0(0#0#59"/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m8598828448#1489"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunesUIAppDelegate.o0#
 
 CCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/main.o /Users/michaelhess/Documents/iTunesUI/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s395126782.998278
-e395126783.257028
+s395566267.702855
+e395566268.037681
 r1
 xCompileC
 xbuild/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/main.o
@@ -239,15 +360,30 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/michaelhess/Documents/iTunesUI/main.m395126782#395126783#0(0"0(0#0#44"/Users/michaelhess/Documents/iTunesUI/main.m8638383424#1459"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/main.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/main.o0#
+lSLF07#2@52"Compile /Users/michaelhess/Documents/iTunesUI/main.m395566267#395566268#0(0"0(0#0#44"/Users/michaelhess/Documents/iTunesUI/main.m8613264864#1459"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/main.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/main.o0#
+
+CCompileC build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/windowUnusedFilesController.o /Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s395654756.023496
+e395654756.307118
+r1
+xCompileC
+xbuild/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/windowUnusedFilesController.o
+x/Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m395654756#395654756#0(0"0(0#0#67"/Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m8634748928#1505"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -include /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch -c /Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m -o /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/windowUnusedFilesController.o0#
 
 CCompileXIB /Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib
-s395270014.240648
-e395270014.500271
+s396526763.244912
+e396526763.704405
 r1
 xCompileXIB
 x/Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib395270014#395270014#0(0"0(0#0#64"/Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib8628852384#362"    cd /Users/michaelhess/Documents/iTunesUI    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj/MainMenu.nib /Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+o/* com.apple.ibtool.document.notices */
+o/Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib:548: note: This view is clipping its content.
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib396526763#396526763#0(151"/* com.apple.ibtool.document.notices *//Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib:548: note: This view is clipping its content.1(13@34"This view is clipping its content.396526763#18446744073709551615#0#0(6@64"/Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib395740060#548#0#548#0#0"0(0#0#64"/Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib8622969312#362"    cd /Users/michaelhess/Documents/iTunesUI    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj/MainMenu.nib /Users/michaelhess/Documents/iTunesUI/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
 
 CCompileXIB /Users/michaelhess/Documents/iTunesUI/UI.xib
 s395218884.201371
@@ -258,36 +394,49 @@ x/Users/michaelhess/Documents/iTunesUI/UI.xib
 lSLF07#2@17"CompileXIB UI.xib395218884#395218884#0(0"0(0#0#44"/Users/michaelhess/Documents/iTunesUI/UI.xib8623833824#322"    cd /Users/michaelhess/Documents/iTunesUI    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/UI.nib /Users/michaelhess/Documents/iTunesUI/UI.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
 
 CCopyStringsFile /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s395126777.073349
-e395126777.902135
+s395523245.962873
+e395523246.209680
 r1
 xCopyStringsFile
 x/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj/InfoPlist.strings
 xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings395126777#395126777#0(0"0(0#0#69"/Users/michaelhess/Documents/iTunesUI/English.lproj/InfoPlist.strings8632709984#364"    cd /Users/michaelhess/Documents/iTunesUI    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj0#
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings395523245#395523246#0(0"0(0#0#69"/Users/michaelhess/Documents/iTunesUI/English.lproj/InfoPlist.strings8612347648#364"    cd /Users/michaelhess/Documents/iTunesUI    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Resources/English.lproj0#
 
 CLd /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/MacOS/iTunesUI normal x86_64
-s395270014.780753
-e395270014.808817
+s396526764.319089
+e396526764.460024
 r1
 xLd
 x/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/MacOS/iTunesUI
 xnormal
 xx86_64
-lSLF07#2@91"Link /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/MacOS/iTunesUI395270014#395270014#0(0"0(0#0#0"8624437824#542"    cd /Users/michaelhess/Documents/iTunesUI    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/michaelhess/Documents/iTunesUI/build/Debug -F/Users/michaelhess/Documents/iTunesUI/build/Debug -filelist /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunesUI.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/MacOS/iTunesUI0#
+lSLF07#2@91"Link /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/MacOS/iTunesUI396526764#396526764#0(0"0(0#0#0"8619883520#542"    cd /Users/michaelhess/Documents/iTunesUI    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/michaelhess/Documents/iTunesUI/build/Debug -F/Users/michaelhess/Documents/iTunesUI/build/Debug -filelist /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/Objects-normal/x86_64/iTunesUI.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/MacOS/iTunesUI0#
 
 CProcessInfoPlistFile /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Info.plist iTunesUI-Info.plist
-s395126776.660541
-e395126777.073239
+s395523245.959543
+e395523245.962808
 r1
 xProcessInfoPlistFile
 x/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Info.plist
 xiTunesUI-Info.plist
-lSLF07#2@27"Process iTunesUI-Info.plist395126776#395126777#0(0"0(0#0#57"/Users/michaelhess/Documents/iTunesUI/iTunesUI-Info.plist8634085024#310"    cd /Users/michaelhess/Documents/iTunesUI    builtin-infoPlistUtility iTunesUI-Info.plist -genpkginfo /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Info.plist0#
+lSLF07#2@27"Process iTunesUI-Info.plist395523245#395523245#0(0"0(0#0#57"/Users/michaelhess/Documents/iTunesUI/iTunesUI-Info.plist8616742720#310"    cd /Users/michaelhess/Documents/iTunesUI    builtin-infoPlistUtility iTunesUI-Info.plist -genpkginfo /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch.pth iTunesUI_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s395563780.659327
+e395563781.561016
+r1
+xProcessPCH
+x/var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch.pth
+xiTunesUI_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@30"Precompile iTunesUI_Prefix.pch395563780#395563781#0(0"0(0#0#57"/Users/michaelhess/Documents/iTunesUI/iTunesUI_Prefix.pch8625167264#1401"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -c /Users/michaelhess/Documents/iTunesUI/iTunesUI_Prefix.pch -o /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-essypejwtmtzgvbnpncussfgrhlk/iTunesUI_Prefix.pch.pth0#
 
 CProcessPCH /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch.gch iTunesUI_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s395126777.902299
-e395126782.997995
+s395523246.270897
+e395523253.409373
 r1
 xProcessPCH
 x/var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch.gch
@@ -296,13 +445,13 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@30"Precompile iTunesUI_Prefix.pch395126777#395126782#0(0"0(0#0#57"/Users/michaelhess/Documents/iTunesUI/iTunesUI_Prefix.pch8633312096#1365"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -c /Users/michaelhess/Documents/iTunesUI/iTunesUI_Prefix.pch -o /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch.gch0#
+lSLF07#2@30"Precompile iTunesUI_Prefix.pch395523246#395523253#0(0"0(0#0#57"/Users/michaelhess/Documents/iTunesUI/iTunesUI_Prefix.pch8625274048#1365"    cd /Users/michaelhess/Documents/iTunesUI    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-generated-files.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-own-target-headers.hmap -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-all-target-headers.hmap -iquote /Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/iTunesUI-project-headers.hmap -F/Users/michaelhess/Documents/iTunesUI/build/Debug -I/Users/michaelhess/Documents/iTunesUI/build/Debug/include -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources/x86_64 -I/Users/michaelhess/Documents/iTunesUI/build/iTunesUI.build/Debug/iTunesUI.build/DerivedSources -c /Users/michaelhess/Documents/iTunesUI/iTunesUI_Prefix.pch -o /var/folders/l1/l1AX8CmQFUepfnpaT6kOF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iTunesUI_Prefix-gstidwudhqlfehglzmbzrcfufczg/iTunesUI_Prefix.pch.gch0#
 
 CTouch /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app
-s395270014.808910
-e395270014.810812
+s396526764.460117
+e396526764.461974
 r1
 xTouch
 x/Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app
-lSLF07#2@68"Touch /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app395270014#395270014#0(0"0(0#0#0"8620463136#130"    cd /Users/michaelhess/Documents/iTunesUI    /usr/bin/touch -c /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app0#
+lSLF07#2@68"Touch /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app396526764#396526764#0(0"0(0#0#0"8631446784#130"    cd /Users/michaelhess/Documents/iTunesUI    /usr/bin/touch -c /Users/michaelhess/Documents/iTunesUI/build/Debug/iTunesUI.app0#
 

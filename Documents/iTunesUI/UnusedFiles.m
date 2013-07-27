@@ -9,22 +9,16 @@
 #import "UnusedFiles.h"
 #import "Utils.h"
 
-#define iTunesMusicFolder [NSHomeDirectory() stringByAppendingPathComponent:@"Music/iTunes/iTunes Music"]
-
-
 @implementation UnusedFiles
 
+-(NSArray *) listOfUnusedFiles:(NSString *)iTunesXmlExportFolder  :(NSString *)iTunesMusic{
 
--(NSArray *) listOfUnusedFiles:(NSString *) iTunesXmlExportFolder {
-
-	//NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];	
 	//NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:iTunesMusicFolder];
 	
 	NSArray *keys = [NSArray arrayWithObjects:
 					 NSURLIsDirectoryKey, NSURLIsPackageKey, NSURLLocalizedNameKey, nil];
 	
-	NSString *dir = @"file://localhost/Users/michaelhess/Music/iTunes/iTunes%20Music/";
-	NSURL *urli = [NSURL URLWithString:dir];
+	NSURL *urli = [NSURL URLWithString:iTunesMusic];
 
 	
 	NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager]
@@ -34,12 +28,8 @@
 												  NSDirectoryEnumerationSkipsHiddenFiles)
 										 errorHandler:^(NSURL *url, NSError *error) {
 											 // Handle the error.
-											 // Return YES if the enumeration should continue after the error.
 											 return NO;
 										 }];
-	
-	
-	
 	
 	Utils *utils = [[Utils alloc]init];
 	
@@ -48,12 +38,10 @@
     NSError *error;
 	NSArray *itemNodes;
 	
-	NSString *fileIniTunes;
-	
 	NSMutableArray* filesFromXml = [[NSMutableArray alloc] initWithCapacity:0];
 	
 	itemNodes = [doc nodesForXPath:@"//dict/dict/dict/string" error:&error];
-	
+		
 	for(NSXMLElement* xmlElement in itemNodes)
 	{
 		filePath = [xmlElement stringValue];

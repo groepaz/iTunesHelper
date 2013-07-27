@@ -12,8 +12,10 @@
 @interface File : NSObject {
 	
 	NSString *filePath;
+	NSString *fileSize;
 }
 
-@property (retain) NSString *filePath;
+@property (nonatomic,retain) NSString *filePath;
+@property (nonatomic,retain) NSString *fileSize;
 
 @end

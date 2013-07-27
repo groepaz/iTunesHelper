@@ -16,5 +16,8 @@
 - (NSXMLDocument *) createXMLDocumentFromFile:(NSString *)file;
 
 - (NSString *)normalizeUrl:(NSString *)url;
+- (NSString *)stringReplace:(NSString*) sourceString :(NSString*) source :(NSString *) replace;
+- (NSString *)stringFromFileSize:(int)theSize;
+
 
 @end

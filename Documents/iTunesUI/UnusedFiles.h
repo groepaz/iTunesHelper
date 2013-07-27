@@ -13,6 +13,7 @@
 
 }
 
--(NSArray *) listOfUnusedFiles:(NSString *) iTunesXmlExportFolder;
+
+-(NSArray *) listOfUnusedFiles:(NSString *) iTunesXmlExportFolder :(NSString *) iTunesMusicFolder ;
 
 @end

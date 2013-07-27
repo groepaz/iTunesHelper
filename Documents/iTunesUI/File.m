@@ -12,5 +12,6 @@
 @implementation File
 
 @synthesize filePath;
+@synthesize fileSize;
 
 @end
