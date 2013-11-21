@@ -16,4 +16,6 @@
 
 -(NSArray *) listOfUnusedFiles:(NSString *) iTunesXmlExportFolder :(NSString *) iTunesMusicFolder ;
 
+-(NSArray *) listOfBrokenLinks:(NSString *) iTunesXmlExportFolder :(NSString *) iTunesMusicFolder ;
+
 @end

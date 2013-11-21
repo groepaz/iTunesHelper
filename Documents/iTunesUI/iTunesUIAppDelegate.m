@@ -14,6 +14,7 @@
 #import "File.h"
 #import "UnusedFiles.h"
 #import "Utils.h"
+#import "GlobalAccess.h"
 
 
 @implementation iTunesUIAppDelegate
@@ -22,24 +23,46 @@
 @synthesize sizeField;
 @synthesize progressIndicator;
 @synthesize iTunesMusicFolder;
-//@synthesize xmlFileDirectory;
+@synthesize xmlFileFolder;
+@synthesize xmlFilePath;
+@synthesize musicFilePath;
+@synthesize windowUnusedFiles;
+
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 
 	[progressIndicator setHidden: YES];	
 }
 
-- (IBAction)deleteItems:(id)sender {
+
+- (iTunesUIAppDelegate *) GetInstance
+{
+    return self;
+}
+
+
+- (NSArray *)GetSelectedItemsFromController{
+    
+	NSArray *selectedItems = [filePathsArrayController selectedObjects];
+		
+//	for (NSString *pathAndFile in selectedItems)
+//	{
+//		NSLog(pathAndFile);
+//	}
+	
+	return selectedItems;
+}
+
+
+- (IBAction)showUnusedFiles:(id)sender {
+    
+	[windowUnusedFiles display];
+	
+	if(! [windowUnusedFiles isVisible] )
+        [windowUnusedFiles makeKeyAndOrderFront:sender];
 }
 
 - (IBAction) setiTunesFolder:(id)sender{
-	
-	
-//	if(! [windowUnusedFiles isVisible] )
-//        [windowUnusedFiles makeKeyAndOrderFront:sender];
-//	
-//	return;
-	
 	
 	NSOpenPanel *panel = [NSOpenPanel openPanel];
 	[panel setAllowsMultipleSelection:NO];
@@ -57,13 +80,72 @@
 		musicFolder = [utils stringReplace:musicFolder :@" " :@"%20" ];
 		musicFolder = [@"files://localhost" stringByAppendingString: musicFolder];
 		[self setITunesMusicFolder:musicFolder];
-	}		
+	}
+}
+
+
+- (IBAction) processFolder:(id)sender{
+    
+    NSArray *fileTypes = [NSArray arrayWithObjects:@"xml",nil];
+    
+    [progressIndicator setUsesThreadedAnimation:YES];
+    [progressIndicator setIndeterminate:YES];
+    [progressIndicator setDisplayedWhenStopped:NO];
+    [progressIndicator setHidden: NO];
+    [progressIndicator startAnimation: self];
+
+    NSString *musicFolder = iTunesMusicFolder;
+
+    
+//    NSString *xmlFolder = [xmlFilePath stringValue];
+//    
+//    xmlFolder = [xmlFolder stringByReplacingOccurrencesOfString: @"iTunes Xml Export File:  /" withString: @""];
+    
+    
+    
+    UnusedFiles *worker = [[UnusedFiles alloc] init];
+    NSArray *unusedFiles = [worker listOfUnusedFiles:xmlFileFolder :musicFolder];
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    
+    int sumOfFilesSizes;
+    
+    for (NSString *pathAndFile in unusedFiles)
+    {
+        //NSDictionary *fileSize = [fileManager fileAttributesAtPath:pathAndFile traverseLink:YES];
+        
+        NSDictionary *fileSize = [fileManager fileAttributesAtPath:pathAndFile traverseLink:YES];
+        
+        NSNumber *totalFileSize = [fileSize objectForKey:NSFileSize];
+        
+        File *file = [[File alloc] init];
+        [file setFilePath:pathAndFile];
+        [file setFileSize:[NSString stringWithFormat:@"%i", [totalFileSize integerValue]]];
+        
+        sumOfFilesSizes += [totalFileSize integerValue];
+        [filePathsArrayController addObject:file];
+    }
+    
+    [GlobalAccess SetArrayControler:filePathsArrayController];
+    
+    int fileCount = [unusedFiles count];
+    
+    Utils *utils = [[Utils alloc] init];
+    
+    NSString *filesCount = [NSString stringWithFormat:@"%@ used by %i files",[utils stringFromFileSize:sumOfFilesSizes],fileCount];
+    
+    [sizeField setStringValue:[@"Space used by unused Files: " stringByAppendingString:filesCount]];
+    
+    [progressIndicator stopAnimation: self];
+    [progressIndicator setHidden: YES];
+
 }
 
 
 - (IBAction) openXmlFile:(id)sender{
 
 	NSString *musicFolder = iTunesMusicFolder;
+    NSArray *fileTypes = [NSArray arrayWithObjects:@"xml",nil];
+
 	
 	if(musicFolder == nil || [musicFolder isEqualToString:@""])
 	{
@@ -72,55 +154,20 @@
 		return;
 	}
 	
-	NSArray *fileTypes = [NSArray arrayWithObjects:@"xml",nil];
-	NSOpenPanel * panel = [NSOpenPanel openPanel];
+    NSOpenPanel * panel = [NSOpenPanel openPanel];
 	[panel setAllowsMultipleSelection:NO];
 	[panel setCanChooseDirectories:YES];
 	[panel setCanChooseFiles:YES];
 	[panel setFloatingPanel:YES];
-	
+
 	NSInteger result = [panel runModalForDirectory:NSHomeDirectory() file:nil types:fileTypes];
-	
+    NSString *xmlFileDirectory = [panel filename];
+    
 	if(result == NSOKButton)
 	{
-		[progressIndicator setUsesThreadedAnimation:YES]; 
-		[progressIndicator setIndeterminate:YES];
-		[progressIndicator setDisplayedWhenStopped:NO];
-		[progressIndicator setHidden: NO];
-		[progressIndicator startAnimation: self];
-		
-		NSString *xmlFileDirectory = [panel filename];
-		[xmlFilePath setStringValue: [@"iTunes Xml Export File: " stringByAppendingString:xmlFileDirectory]];
-		
-		UnusedFiles *worker = [[UnusedFiles alloc] init];
-		NSArray *unusedFiles = [worker listOfUnusedFiles:xmlFileDirectory :musicFolder];
-		NSFileManager *fileManager = [[NSFileManager alloc] init];	
-
-		int sumOfFilesSizes;
-			
-		for (NSString *pathAndFile in unusedFiles)
-		{
-			NSDictionary *fileSize = [fileManager fileAttributesAtPath:pathAndFile traverseLink:YES];
-			NSNumber *totalFileSize = [fileSize objectForKey:NSFileSize];
-			
-			File *file = [[File alloc] init];
-			[file setFilePath:pathAndFile];
-			[file setFileSize:[NSString stringWithFormat:@"%i", [totalFileSize integerValue]]];
-			
-			sumOfFilesSizes += [totalFileSize integerValue];
-			[filePathsArrayController addObject:file]; 
-		}
-		
-		int fileCount = [unusedFiles count];
-		
-		Utils *utils = [[Utils alloc] init];
-		
-		NSString *filesCount = [NSString stringWithFormat:@"%@ by %i files",[utils stringFromFileSize:sumOfFilesSizes],fileCount];
-		
-		[sizeField setStringValue:[@"Space used: " stringByAppendingString:filesCount]];									
-		[progressIndicator stopAnimation: self];
-		[progressIndicator setHidden: YES];
-	}	
+        [xmlFilePath setStringValue: [@"iTunes Xml Export File: " stringByAppendingString:xmlFileDirectory]];
+        [self setXmlFileFolder:xmlFileDirectory];
+    }
 }
 
 @end

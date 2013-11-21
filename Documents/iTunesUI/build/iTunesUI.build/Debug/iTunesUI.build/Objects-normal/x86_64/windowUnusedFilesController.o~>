@@ -1,0 +1,2 @@
+/Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m: In function '-[windowUnusedFilesController deleteSelectedFiles:]':
+/Users/michaelhess/Documents/iTunesUI/windowUnusedFilesController.m:35: warning: format not a string literal and no format arguments

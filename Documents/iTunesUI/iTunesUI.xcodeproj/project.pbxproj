@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		7A22397E178E956100C2A1EE /* UnusedFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A22397D178E956100C2A1EE /* UnusedFiles.m */; };
 		7A223989178E96AB00C2A1EE /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A223988178E96AB00C2A1EE /* Utils.m */; };
 		7A2428601795342800097EFA /* windowUnusedFilesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A24285F1795342800097EFA /* windowUnusedFilesController.m */; };
+		7AF7BEE21835807B00459591 /* GlobalAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7BEE11835807B00459591 /* GlobalAccess.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -38,6 +39,8 @@
 		7A24285E1795342800097EFA /* windowUnusedFilesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windowUnusedFilesController.h; sourceTree = "<group>"; };
 		7A24285F1795342800097EFA /* windowUnusedFilesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = windowUnusedFilesController.m; sourceTree = "<group>"; };
 		7A2428C817A3B9ED00097EFA /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
+		7AF7BEE01835807B00459591 /* GlobalAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalAccess.h; sourceTree = "<group>"; };
+		7AF7BEE11835807B00459591 /* GlobalAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalAccess.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iTunesUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iTunesUI-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* iTunesUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +66,8 @@
 				7A22393E178E90AD00C2A1EE /* File.m */,
 				7A24285E1795342800097EFA /* windowUnusedFilesController.h */,
 				7A24285F1795342800097EFA /* windowUnusedFilesController.m */,
+				7AF7BEE01835807B00459591 /* GlobalAccess.h */,
+				7AF7BEE11835807B00459591 /* GlobalAccess.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -172,9 +177,16 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iTunesUI" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* iTunesUI */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,6 +216,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* iTunesUIAppDelegate.m in Sources */,
 				7A22393F178E90AD00C2A1EE /* File.m in Sources */,
+				7AF7BEE21835807B00459591 /* GlobalAccess.m in Sources */,
 				7A22397E178E956100C2A1EE /* UnusedFiles.m in Sources */,
 				7A223989178E96AB00C2A1EE /* Utils.m in Sources */,
 				7A2428601795342800097EFA /* windowUnusedFilesController.m in Sources */,
@@ -236,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -253,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -266,26 +281,24 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

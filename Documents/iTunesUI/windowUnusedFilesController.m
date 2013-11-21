@@ -7,17 +7,32 @@
 //
 
 #import "windowUnusedFilesController.h"
+#import "iTunesUIAppDelegate.h"
+#import "GlobalAccess.h"
+#import "File.h"
 
 
 @implementation windowUnusedFilesController
 
 @synthesize window;
 
-- (IBAction) closeWindow:(id)sender{
 
-	[window close];
+- (IBAction) deleteSelectedFiles:(id)sender{
+
 }
 
+- (IBAction) deleteAllFiles:(id)sender{
 
-
+    NSArrayController *filePathsArrayController = [GlobalAccess GetArrayControler];
+    
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    
+    NSArray *strings = [[NSArray alloc]initWithArray:[filePathsArrayController arrangedObjects]];
+    
+	for ( File *file  in strings)
+	{
+        [fileManager removeItemAtPath:[file filePath] error:nil];
+		NSLog([file filePath]);
+	}
+}
 @end

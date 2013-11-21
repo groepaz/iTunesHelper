@@ -14,7 +14,9 @@
 
 }
 
-- (IBAction) closeWindow:(id)sender;
+- (IBAction) deleteAllFiles:(id)sender;
+
+- (IBAction) deleteSelectedFiles:(id)sender;
 
 @property (nonatomic, retain) IBOutlet NSWindow *window;
 

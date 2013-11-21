@@ -17,15 +17,15 @@
 	IBOutlet NSTextField *musicFilePath;
 	IBOutlet NSProgressIndicator *progressIndicator;
 	IBOutlet NSWindow *windowUnusedFiles;
-	
 	NSString *iTunesMusicFolder;
-//	NSString *xmlFileDirectory;
 }
 
-- (IBAction) deleteItems:(id)sender;
+- (IBAction) showUnusedFiles:(id)sender;
 - (IBAction) openXmlFile:(id)sender;
 - (IBAction) setiTunesFolder:(id)sender;
-
+- (IBAction) processFolder:(id)sender;
+- (NSArray *) GetSelectedItemsFromController;
+- (iTunesUIAppDelegate *) GetInstance;
 
 @property (nonatomic, retain) IBOutlet NSWindow *window;
 @property (nonatomic, retain) IBOutlet NSTextField *sizeField;
@@ -33,7 +33,8 @@
 @property (nonatomic, retain) IBOutlet NSTextField *musicFilePath;
 @property (nonatomic, retain) IBOutlet NSProgressIndicator *progressIndicator;
 @property (nonatomic, retain) IBOutlet NSWindow *windowUnusedFiles;
+
 @property (nonatomic, retain) NSString *iTunesMusicFolder;
-//@property (nonatomic, retain) NSString *xmlFileDirectory;
+@property (nonatomic, retain) NSString *xmlFileFolder;
 
 @end

@@ -22,8 +22,7 @@
 	floatSize = floatSize / 1024;
 	if (floatSize<1023)
 		return([NSString stringWithFormat:@"%1.1f MB",floatSize]);
-	floatSize = floatSize / 1024;
-	
+	floatSize = floatSize / 1024;	
 	return([NSString stringWithFormat:@"%1.1f GB",floatSize]);
 }
 
@@ -52,8 +51,8 @@
 - (NSString *)stringReplace:(NSString*) sourceString :(NSString*) source :(NSString *) replace{
 
 	
-	NSMutableArray* aList = [[[NSMutableArray alloc] initWithObjects:source,nil] autorelease];
-	NSMutableArray* bList = [[[NSMutableArray alloc] initWithObjects:replace,nil] autorelease];
+	NSMutableArray* aList = [[NSMutableArray alloc] initWithObjects:source,nil];
+	NSMutableArray* bList = [[NSMutableArray alloc] initWithObjects:replace,nil];
 
 	for (int i=0; i<[aList count];i++)
 	{
@@ -67,8 +66,8 @@
 
 - (NSString *)normalizeUrl:(NSString *)url
 {
-	NSMutableArray* aList = [[[NSMutableArray alloc] initWithObjects:@"%20",nil]autorelease];
-	NSMutableArray* bList = [[[NSMutableArray alloc] initWithObjects:@" ",nil]autorelease];
+	NSMutableArray* aList = [[NSMutableArray alloc] initWithObjects:@"%20",nil];
+	NSMutableArray* bList = [[NSMutableArray alloc] initWithObjects:@" ",nil];
 	
 	for (int i=0; i<[aList count];i++)
 	{
@@ -76,8 +75,8 @@
 											 withString:[bList objectAtIndex:i]];
 	}
 	
-	aList = [[[NSMutableArray alloc] initWithObjects:@"file://localhost",nil]autorelease];
-	bList = [[[NSMutableArray alloc] initWithObjects:@"",nil]autorelease];
+	aList = [[NSMutableArray alloc] initWithObjects:@"file://localhost",nil];
+	bList = [[NSMutableArray alloc] initWithObjects:@"",nil];
 	
 	
 	for (int i=0; i<[aList count];i++)

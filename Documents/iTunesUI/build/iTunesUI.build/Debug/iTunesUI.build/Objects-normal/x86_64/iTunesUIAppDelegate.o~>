@@ -1,0 +1,7 @@
+/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m: In function '-[iTunesUIAppDelegate GetSelectedItemsFromController]':
+/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:50: warning: format not a string literal and no format arguments
+/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m: In function '-[iTunesUIAppDelegate openXmlFile:]':
+/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:127: warning: 'fileAttributesAtPath:traverseLink:' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:162)
+/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m: At top level:
+/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:150: warning: incomplete implementation of class 'iTunesUIAppDelegate'
+/Users/michaelhess/Documents/iTunesUI/iTunesUIAppDelegate.m:150: warning: method definition for '+GetSelectedItemsFromController' not found
